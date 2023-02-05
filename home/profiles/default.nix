@@ -18,6 +18,15 @@
         inputs.hyprland.homeManagerModules.default
       ]
       ++ sharedModules;
+      
+  "schen@gramnix" =
+      [
+        ./gramnix
+        inputs.spicetify-nix.homeManagerModule
+        inputs.hyprland.homeManagerModules.default
+      ]
+      ++ sharedModules;
+
     server = sharedModules ++ [./server];
   };
 
@@ -33,7 +42,13 @@ in {
         modules = homeImports."mihai@io" ++ module_args;
         inherit pkgs;
       };
-      server = homeManagerConfiguration {
+
+      "schen@gramnix" = homeManagerConfiguration {
+        modules = homeImports."schen@gramnix" ++ module_args;
+        inherit pkgs;
+      };
+
+       server = homeManagerConfiguration {
         modules = homeImports.server ++ module_args;
         inherit pkgs;
       };
