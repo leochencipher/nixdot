@@ -45,11 +45,6 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
 
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     devshell.url = "github:numtide/devshell";
 
     eww = {

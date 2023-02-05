@@ -18,28 +18,6 @@
   };
 
   nix = {
-    # extra builders to offload work onto
-    # don't set a machine as a builder to itself (throws warnings)
-    buildMachines = lib.filter (x: x.hostName != config.networking.hostName) [
-      {
-        system = "aarch64-linux";
-        sshUser = "root";
-        sshKey = "/etc/ssh/ssh_host_ed25519_key";
-        maxJobs = 4;
-        hostName = "arm-server";
-        supportedFeatures = ["nixos-test" "benchmark" "kvm" "big-parallel"];
-      }
-      {
-        system = "x86_64-linux";
-        sshUser = "root";
-        sshKey = "/root/.ssh/id_ed25519";
-        maxJobs = 8;
-        hostName = "io";
-        supportedFeatures = ["nixos-test" "benchmark" "kvm" "big-parallel"];
-      }
-    ];
-    distributedBuilds = true;
-
     # auto garbage collect
     gc = {
       automatic = true;
@@ -67,6 +45,7 @@
       keep-outputs = true;
 
       substituters = [
+        "https://mirrors.sjtu.edu.cn/nix-channels/store"
         "https://nix-community.cachix.org"
         "https://helix.cachix.org"
         "https://fufexan.cachix.org"

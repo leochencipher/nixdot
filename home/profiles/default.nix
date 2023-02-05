@@ -14,8 +14,8 @@
      
     "schen@gramnix" =
       [
-        ./gramnix
         inputs.hyprland.homeManagerModules.default
+        ./gramnix
       ]
       ++ sharedModules;
 
