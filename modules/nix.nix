@@ -45,7 +45,7 @@
       keep-outputs = true;
 
       substituters = [
-        "https://mirrors.sjtu.edu.cn/nix-channels/store"
+        "https://mirror.sjtu.edu.cn/nix-channels/store"
         "https://nix-community.cachix.org"
         "https://helix.cachix.org"
         "https://fufexan.cachix.org"
