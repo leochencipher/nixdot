@@ -12,7 +12,7 @@
 
   homeImports = {
      
-  "schen@gramnix" =
+    "schen@gramnix" =
       [
         ./gramnix
         inputs.hyprland.homeManagerModules.default
@@ -28,7 +28,7 @@ in {
   ];
 
   flake = {
-    homeConfigurations = withSystem "x86_64-linux" ({pkgs, ...}: {
+    homeConfigurations.schen = withSystem "x86_64-linux" ({pkgs, ...}: {
       "schen@gramnix" = homeManagerConfiguration {
         modules = homeImports."schen@gramnix" ++ module_args;
         inherit pkgs;
