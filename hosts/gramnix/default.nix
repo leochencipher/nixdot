@@ -53,6 +53,7 @@
   };
 
   networking.networkmanager.enable = true;
+  networking.hostname = "gramnix"
   
   programs = {
     # enable hyprland and required options
