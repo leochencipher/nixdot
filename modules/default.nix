@@ -28,8 +28,6 @@ in {
 
         desktopModules = with inputs; [
           hyprland.nixosModules.default
-          kmonad.nixosModules.default
-          nix-gaming.nixosModules.default
         ];
       };
     }

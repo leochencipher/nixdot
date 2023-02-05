@@ -12,10 +12,6 @@
       supportedFilesystems = ["btrfs"];
     };
 
-    # load modules on boot
-    kernelmodules = ["acpi_call"];
-
-    # use latest kernel
     kernelPackages = pkgs.linuxPackages_latest;
 
     loader = {
