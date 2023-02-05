@@ -199,38 +199,6 @@
         "type": "github"
       }
     },
-    "flake-compat_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1673956053,
-        "narHash": "sha256-4gtG9iQuiKITOjNQQeQIpoIB6b16fm+504Ch3sNKLd8=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "35bb57c0c8d8b62bbfd284272c928ceb64ddbde9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
-    "flake-compat_3": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1673956053,
-        "narHash": "sha256-4gtG9iQuiKITOjNQQeQIpoIB6b16fm+504Ch3sNKLd8=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "35bb57c0c8d8b62bbfd284272c928ceb64ddbde9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -485,27 +453,6 @@
         "type": "github"
       }
     },
-    "nix-matlab": {
-      "inputs": {
-        "flake-compat": "flake-compat_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1675522940,
-        "narHash": "sha256-7vzMIbvSadW77Ssh539yj98ElebxEOEs9gnL9SOmXms=",
-        "owner": "doronbehar",
-        "repo": "nix-matlab",
-        "rev": "4424c24ee4dd3f0b48aa791fab81e4c3daa1b0f0",
-        "type": "gitlab"
-      },
-      "original": {
-        "owner": "doronbehar",
-        "repo": "nix-matlab",
-        "type": "gitlab"
-      }
-    },
     "nix-super": {
       "inputs": {
         "lowdown-src": "lowdown-src",
@@ -524,27 +471,6 @@
         "owner": "privatevoid-net",
         "repo": "nix-super",
         "type": "github"
-      }
-    },
-    "nix-xilinx": {
-      "inputs": {
-        "flake-compat": "flake-compat_3",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1675587809,
-        "narHash": "sha256-vXu6i3zooYhT0tEuJREMp0P0TKV8g31nfrO98+6/+iE=",
-        "owner": "doronbehar",
-        "repo": "nix-xilinx",
-        "rev": "6c3229b76e2b0349f0e48eadbb5e1fe22322a3e5",
-        "type": "gitlab"
-      },
-      "original": {
-        "owner": "doronbehar",
-        "repo": "nix-xilinx",
-        "type": "gitlab"
       }
     },
     "nixlib": {
@@ -727,14 +653,10 @@
         "hyprland": "hyprland",
         "hyprland-contrib": "hyprland-contrib",
         "nil": "nil",
-        "nix-matlab": "nix-matlab",
         "nix-super": "nix-super",
-        "nix-xilinx": "nix-xilinx",
         "nixos-generators": "nixos-generators",
         "nixpkgs": "nixpkgs_5",
-        "rust-overlay": "rust-overlay_2",
-        "spicetify-nix": "spicetify-nix",
-        "waveforms-flake": "waveforms-flake"
+        "rust-overlay": "rust-overlay_2"
       }
     },
     "rust-overlay": {
@@ -782,26 +704,6 @@
         "type": "github"
       }
     },
-    "spicetify-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1674530093,
-        "narHash": "sha256-iOV4gzi/ZXU1wNjsCmwAgi2ziqGWGTXQjJUiWVEkb44=",
-        "owner": "the-argus",
-        "repo": "spicetify-nix",
-        "rev": "f551a7485fc4d6021583fd274f7f040b23799a7e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "the-argus",
-        "repo": "spicetify-nix",
-        "type": "github"
-      }
-    },
     "utils": {
       "locked": {
         "lastModified": 1667395993,
@@ -814,26 +716,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "waveforms-flake": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1675308607,
-        "narHash": "sha256-qAKCspANpInEMmvoeIYmykiwU14MKHRzi2DtcO49tL8=",
-        "owner": "liff",
-        "repo": "waveforms-flake",
-        "rev": "3a68fa47a664874a3a6d2e5d6b40f29b39d2c233",
-        "type": "github"
-      },
-      "original": {
-        "owner": "liff",
-        "repo": "waveforms-flake",
         "type": "github"
       }
     },

@@ -18,7 +18,6 @@
           ../modules/desktop.nix
           ../modules/gamemode.nix
           {home-manager.users.schen.imports = homeImports."schen@gramnix";}
-          inputs.waveforms-flake.nixosModule
         ]
         ++ sharedModules
         ++ desktopModules;

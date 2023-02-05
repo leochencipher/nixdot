@@ -15,7 +15,6 @@
   "schen@gramnix" =
       [
         ./gramnix
-        inputs.spicetify-nix.homeManagerModule
         inputs.hyprland.homeManagerModules.default
       ]
       ++ sharedModules;
