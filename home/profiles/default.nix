@@ -28,7 +28,7 @@ in {
   ];
 
   flake = {
-    homeConfigurations.schen = withSystem "x86_64-linux" ({pkgs, ...}: {
+    homeConfigurations = withSystem "x86_64-linux" ({pkgs, ...}: {
       "schen@gramnix" = homeManagerConfiguration {
         modules = homeImports."schen@gramnix" ++ module_args;
         inherit pkgs;
