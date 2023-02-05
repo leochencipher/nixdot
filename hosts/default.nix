@@ -17,7 +17,7 @@
           ../modules/greetd.nix
           ../modules/desktop.nix
           ../modules/gamemode.nix
-          hm.nixosModules.home-manager {
+          inputs.hm.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.schen.imports = homeImports."schen@gramnix";
