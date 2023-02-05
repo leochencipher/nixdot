@@ -9,7 +9,6 @@
   boot = {
     initrd = {
       systemd.enable = true;
-      supportedFilesystems = ["btrfs"];
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
@@ -73,7 +72,6 @@
   };
 
   services = {
-    btrfs.autoScrub.enable = true;
 
     # use Ambient Light Sensors for auto brightness adjustment
     clight = {
@@ -87,10 +85,6 @@
 
     # for SSD/NVME
     fstrim.enable = true;
-
-
-    # see https://github.com/fufexan/nix-gaming/#pipewire-low-latency
-    pipewire.lowLatency.enable = true;
 
     printing.enable = true;
 
