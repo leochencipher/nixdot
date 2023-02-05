@@ -19,7 +19,7 @@
       modules =
         [
           "${inputs.nixpkgs}/nixos/modules/installer/cd-dvd/iso-image.nix"
-          {home-manager.users.mihai.imports = homeImports."mihai@io";}
+          {home-manager.users.schen.imports = homeImports."schen@gramnix";}
         ]
         ++ desktopModules
         ++ sharedModules;

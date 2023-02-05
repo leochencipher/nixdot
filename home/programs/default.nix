@@ -11,7 +11,6 @@
     ./git.nix
     ./gtk.nix
     ./packages.nix
-    ./spicetify.nix
     ./xdg.nix
     ./zathura.nix
   ];

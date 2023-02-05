@@ -42,7 +42,7 @@
       signByDefault = true;
     };
 
-    userEmail = "fufexan@protonmail.com";
-    userName = "Mihai Fufezan";
+    userEmail = "leo.chen.cipher@gmail.com";
+    userName = "schen";
   };
 }

@@ -82,17 +82,7 @@
     };
 
 
-    nix-matlab = {
-      url = "gitlab:doronbehar/nix-matlab";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nix-super.url = "github:privatevoid-net/nix-super";
-
-    nix-xilinx = {
-      url = "gitlab:doronbehar/nix-xilinx";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
@@ -103,16 +93,6 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "fu";
-    };
-
-    spicetify-nix = {
-      url = "github:the-argus/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    waveforms-flake = {
-      url = "github:liff/waveforms-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
   };
