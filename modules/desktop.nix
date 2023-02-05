@@ -75,6 +75,7 @@
     # package = inputs.nix-super.packages.${pkgs.hostPlatform.system}.nix;
     settings = {
       substituters = [
+        "https://mirror.sjtu.edu.cn/nix-channels/store"
         "https://nix-gaming.cachix.org"
         "https://hyprland.cachix.org"
         "https://cache.privatevoid.net"
@@ -93,23 +94,6 @@
   services = {
     # provide location
     geoclue2.enable = true;
-
-    # keyboard remapping
-    kmonad = {
-      enable = true;
-      package = inputs.kmonad.packages.${pkgs.hostPlatform.system}.default;
-      keyboards = {
-        one2mini = {
-          device = "/dev/input/by-id/usb-Ducky_Ducky_One2_Mini_RGB_DK-V1.17-190813-event-kbd";
-          defcfg = {
-            enable = true;
-            fallthrough = true;
-            allowCommands = false;
-          };
-          config = builtins.readFile "${inputs.self}/modules/main.kbd";
-        };
-      };
-    };
 
     pipewire = {
       enable = true;

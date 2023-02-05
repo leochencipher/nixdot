@@ -11,14 +11,7 @@
   ];
 
   homeImports = {
-    "mihai@io" =
-      [
-        ./io
-        inputs.spicetify-nix.homeManagerModule
-        inputs.hyprland.homeManagerModules.default
-      ]
-      ++ sharedModules;
-      
+     
   "schen@gramnix" =
       [
         ./gramnix
@@ -27,7 +20,6 @@
       ]
       ++ sharedModules;
 
-    server = sharedModules ++ [./server];
   };
 
   inherit (inputs.hm.lib) homeManagerConfiguration;
@@ -38,20 +30,11 @@ in {
 
   flake = {
     homeConfigurations = withSystem "x86_64-linux" ({pkgs, ...}: {
-      "mihai@io" = homeManagerConfiguration {
-        modules = homeImports."mihai@io" ++ module_args;
-        inherit pkgs;
-      };
-
       "schen@gramnix" = homeManagerConfiguration {
         modules = homeImports."schen@gramnix" ++ module_args;
         inherit pkgs;
       };
 
-       server = homeManagerConfiguration {
-        modules = homeImports.server ++ module_args;
-        inherit pkgs;
-      };
     });
   };
 }

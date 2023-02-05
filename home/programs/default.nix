@@ -24,7 +24,7 @@
 
     firefox = {
       enable = true;
-      profiles.mihai = {};
+      profiles.schen = {};
     };
 
     gpg = {
