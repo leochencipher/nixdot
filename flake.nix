@@ -41,7 +41,7 @@
     };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
 
@@ -74,11 +74,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    kmonad = {
-      url = "github:kmonad/kmonad?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nil = {
       url = "github:oxalica/nil";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -86,7 +81,6 @@
       inputs.rust-overlay.follows = "rust-overlay";
     };
 
-    nix-gaming.url = "github:fufexan/nix-gaming";
 
     nix-matlab = {
       url = "gitlab:doronbehar/nix-matlab";
@@ -121,6 +115,5 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    webcord.url = "github:fufexan/webcord-flake";
   };
 }
