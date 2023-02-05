@@ -12,7 +12,6 @@
     pulsemixer
     # images
     imv
-
   ];
 
   programs = {
@@ -27,5 +26,5 @@
 
   services = {
     playerctld.enable = true;
-   };
+  };
 }

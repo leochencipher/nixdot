@@ -54,7 +54,7 @@
 
   networking.networkmanager.enable = true;
   networking.hostName = "gramnix";
-  
+
   programs = {
     # enable hyprland and required options
     hyprland.enable = true;
@@ -73,7 +73,6 @@
   };
 
   services = {
-
     # use Ambient Light Sensors for auto brightness adjustment
     clight = {
       enable = true;

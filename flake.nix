@@ -76,7 +76,6 @@
       inputs.rust-overlay.follows = "rust-overlay";
     };
 
-
     nix-super.url = "github:privatevoid-net/nix-super";
 
     nixos-generators = {
@@ -89,6 +88,5 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "fu";
     };
-
   };
 }

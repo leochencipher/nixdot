@@ -11,14 +11,12 @@
   ];
 
   homeImports = {
-     
     "schen@gramnix" =
       [
         inputs.hyprland.homeManagerModules.default
         ./gramnix
       ]
       ++ sharedModules;
-
   };
 
   inherit (inputs.hm.lib) homeManagerConfiguration;
@@ -33,7 +31,6 @@ in {
         modules = homeImports."schen@gramnix" ++ module_args;
         inherit pkgs;
       };
-
     });
   };
 }
