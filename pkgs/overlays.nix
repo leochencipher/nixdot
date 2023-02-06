@@ -17,5 +17,7 @@ inputs: _: prev: {
   waveform = prev.callPackage ./waveform {};
 
   spotify = prev.callPackage ./spotify {};
+  
+  sway-hidpi = import ./sway-hidpi.nix prev;
 
 }
