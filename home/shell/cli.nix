@@ -21,6 +21,7 @@
     playerctl
     socat
     wget
+    broot
 
     # file managers
     joshuto
