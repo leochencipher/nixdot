@@ -11,10 +11,21 @@
     duf
     fd
     ripgrep
+    bc
+    blueberry
+    gojq
+    imagemagick
+    iwgtk
+    jaq
+    light
+    playerctl
+    socat
+    wget
 
     # file managers
     joshuto
     ranger
+
   ];
 
   programs = {
