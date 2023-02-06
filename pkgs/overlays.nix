@@ -18,5 +18,4 @@ inputs: _: prev: {
 
   spotify = prev.callPackage ./spotify {};
 
-  sway-hidpi = import ./sway-hidpi.nix prev;
 }

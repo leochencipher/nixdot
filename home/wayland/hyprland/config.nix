@@ -11,7 +11,7 @@
   emoji = "${pkgs.wofi-emoji}/bin/wofi-emoji";
   launcher = "wofi";
 in {
-  wayland.windowManager.hyprland.extraConfig = ''
+  programs.hyprland.extraConfig = ''
     $mod = SUPER
 
     # should be configured per-profile

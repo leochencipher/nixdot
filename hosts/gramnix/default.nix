@@ -46,9 +46,6 @@
     enableRedistributableFirmware = true;
 
     opentabletdriver.enable = true;
-
-    video.hidpi.enable = true;
-
     xpadneo.enable = true;
   };
 
