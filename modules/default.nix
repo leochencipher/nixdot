@@ -17,7 +17,10 @@ in {
         inherit module_args;
 
         sharedModules = [
-          {home-manager.useGlobalPkgs = true;}
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+          }
           inputs.hm.nixosModule
           ./minimal.nix
           module_args
